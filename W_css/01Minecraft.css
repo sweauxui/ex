@@ -34,7 +34,7 @@
     width: fit-content;
     height: 100%;
     border: none;
-    background: url(/w_images/01minecraft/초록버튼밑바탕.png) no-repeat;
+    background: url(/ex/w_images/01minecraft/초록버튼밑바탕.png) no-repeat;
 }
 .scrollTopbt.on {
     display: flex;
@@ -53,11 +53,11 @@
 .inner-up {
     height: 125px;
     width: 100%;
-    background: url(/w_images/01minecraft/배경위.png) repeat;}
+    background: url(/ex/w_images/01minecraft/배경위.png) repeat;}
 .inner-down {
      height: 120px;
       width: 100%;
-     background: url(/w_images/01minecraft/배경아래.png) repeat;}    
+     background: url(/ex/w_images/01minecraft/배경아래.png) repeat;}    
 
 section {flex-direction: column;}
 header {flex-direction: column;}
@@ -350,12 +350,12 @@ nav > div{
     color: var(--colorWhite);
     font-size: 20px;
     font-weight: 700;
-    background: url(/w_images/01minecraft/초록버튼밑바탕.png)no-repeat 50% 50% / 100px 45px;
+    background: url(/ex/w_images/01minecraft/초록버튼밑바탕.png)no-repeat 50% 50% / 100px 45px;
 }
 
 .inner1200 button:hover {
     border: 0px;
-    background: url(/w_images/01minecraft/검정버튼밑바탕.png)no-repeat 50% 50% / 100px 45px;
+    background: url(/ex/w_images/01minecraft/검정버튼밑바탕.png)no-repeat 50% 50% / 100px 45px;
     transition: all 0.3s;
     border: 2px solid var(--colorWhite);
 }
@@ -370,24 +370,24 @@ nav > div{
 /* 게임카드버튼호버 */
 .gamecard > .swiper-button-next::after {display: none;}
 .gamecard > .swiper-button-next {
-    background: url(/w_images/01minecraft/버튼_초록우.png) no-repeat 50% 50% / 74px 74px;
+    background: url(/ex/w_images/01minecraft/버튼_초록우.png) no-repeat 50% 50% / 74px 74px;
     width: 74px;
     height: 74px;
 }
 .gamecard > .swiper-button-next:hover {
-    background: url(/w_images/01minecraft/버튼_검정우.png) no-repeat 50% 50% / 64px 64px;
+    background: url(/ex/w_images/01minecraft/버튼_검정우.png) no-repeat 50% 50% / 64px 64px;
     border: 2px solid var(--colorWhite);
     transition: all 0.2s;
 }
 
 .gamecard > .swiper-button-prev::after {display: none;}
 .gamecard > .swiper-button-prev {
-    background: url(/w_images/01minecraft/버튼_초록좌.png)no-repeat 50% 50% / 74px 74px;
+    background: url(/ex/w_images/01minecraft/버튼_초록좌.png)no-repeat 50% 50% / 74px 74px;
     width: 74px;
     height: 74px;
 }
 .gamecard > .swiper-button-prev:hover {
-    background: url(/w_images/01minecraft/버튼_검정좌.png) no-repeat 50% 50% / 64px 64px;
+    background: url(/ex/w_images/01minecraft/버튼_검정좌.png) no-repeat 50% 50% / 64px 64px;
     border: 2px solid var(--colorWhite);
     transition: all 0.2s;
 }
@@ -449,7 +449,7 @@ nav > div{
     justify-content: center;
     text-align: center;
     padding: 20px 0;
-    background: url(/w_images/01minecraft/배경흰색-수정.png);
+    background: url(/ex/w_images/01minecraft/배경흰색-수정.png);
 }
 
 .innerwhite {
@@ -457,14 +457,14 @@ nav > div{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url(/w_images/01minecraft/배경흰색-수정.png);}
+    background: url(/ex/w_images/01minecraft/배경흰색-수정.png);}
 
 .innerblack {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url(/w_images/01minecraft//검정배경_ㄲ.png);
+    background: url(/ex/w_images/01minecraft//검정배경_ㄲ.png);
 }    
 
 .News1200 {
@@ -500,24 +500,24 @@ nav > div{
 
 .News > .swiper-button-next::after {display: none;}
 .News > .swiper-button-next {
-    background: url(/w_images/01minecraft/버튼_초록우.png) no-repeat 50% 50%/ 74px 74px;
+    background: url(/ex/w_images/01minecraft/버튼_초록우.png) no-repeat 50% 50%/ 74px 74px;
     width: 74px;
     height: 74px;
 }
 .News > .swiper-button-next:hover {
-    background: url(/w_images/01minecraft/버튼_검정우.png) no-repeat 50% 50%/ 64px 64px;
+    background: url(/ex/w_images/01minecraft/버튼_검정우.png) no-repeat 50% 50%/ 64px 64px;
     border: 2px solid var(--colorWhite);
     transition: all 0.2s;
 }
       
 .News > .swiper-button-prev::after {display: none;}
 .News > .swiper-button-prev {
-    background: url(/w_images/01minecraft/버튼_초록좌.png)no-repeat 50% 50%/ 74px 74px;
+    background: url(/ex/w_images/01minecraft/버튼_초록좌.png)no-repeat 50% 50%/ 74px 74px;
     width: 74px;
     height: 74px;
 }
 .News > .swiper-button-prev:hover {
-    background: url(/w_images/01minecraft/버튼_검정좌.png)no-repeat 50% 50%/ 64px 64px;
+    background: url(/ex/w_images/01minecraft/버튼_검정좌.png)no-repeat 50% 50%/ 64px 64px;
     border: 2px solid var(--colorWhite);
     transition: all 0.2s;
 }
