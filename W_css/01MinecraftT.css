@@ -51,7 +51,7 @@ nav > ul {gap: 0;}
     z-index: 1;
     width: 66px;
     height: 79px;
-    background: url(/w_images/01minecraft/hamburger-icon.png) no-repeat 50% 50% / cover ;
+    background: url(/ex/w_images/01minecraft/hamburger-icon.png) no-repeat 50% 50% / cover ;
     border: none;
 }
 
@@ -60,7 +60,7 @@ nav > ul {gap: 0;}
 .art01 {padding: 200px 0 0 0;}
 
 .hamburger.on {
-    background: url(/w_images/01minecraft/hamburger-closeicon.png)  no-repeat 50% 50% / cover
+    background: url(/ex/w_images/01minecraft/hamburger-closeicon.png)  no-repeat 50% 50% / cover
     ;
     /* mix-blend-mode: multiply ; */
 }
