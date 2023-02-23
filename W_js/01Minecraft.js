@@ -18,6 +18,16 @@ var swiper1 = new Swiper(".gamecard", {
 var swiper2 = new Swiper(".News", {
   slidesPerView: 2.5,
   spaceBetween: 40,
+  breakpoints: {
+    1199: {
+      slidesPerView: 2.5,
+      spaceBetween: 90,
+    },
+  },
+  899: {
+    slidesPerView: 2.5,
+    spaceBetween: 150,
+  },
   centeredSlides: true,
   loop: true,
   navigation: {
@@ -27,20 +37,6 @@ var swiper2 = new Swiper(".News", {
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
-  },
-  breakpoints: {
-    // 640: {
-    //   slidesPerView: 2,
-    //   spaceBetween: 20,
-    // },
-    // 768: {
-    //   slidesPerView: 4,
-    //   spaceBetween: 40,
-    // },
-    1000: {
-      slidesPerView: 2,
-      spaceBetween: 90,
-    },
   },
 });
 
@@ -85,4 +81,15 @@ var swiper2 = new Swiper(".News", {
     else{
       $('.gnb').removeClass('on')
     }
+
+    if(!$('.login_start').hasClass('on')){
+      $('.login_start').addClass('on')
+    }
+    else{
+      $('.login_start').removeClass('on')
+    }
+     $(this).toggleClass('on')
   })
+
+
+// .attr

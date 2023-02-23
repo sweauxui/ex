@@ -29,16 +29,18 @@
     display: none;
     position: absolute;
     align-items: center;
-    right: 10%;
+    right: 0;
+    bottom: 100%;
     transition: all 0.5s;
-    width: fit-content;
-    height: 100%;
     border: none;
-    background: url(/ex/w_images/01minecraft/초록버튼밑바탕.png) no-repeat;
+    width: 50px;
+    height: 50px;
+    background: url(/ex/w_images/01minecraft/scrollTopbt.png) no-repeat 50% 50% / 35px 35px;
 }
-.scrollTopbt.on {
-    display: flex;
-}
+
+.scrollTopbt.on {display: flex;}
+
+.scrollTopbt:hover {border: 2px solid var(--colorWhite);}
 
 .inner {
     width: 100%;
@@ -53,7 +55,7 @@
 .inner-up {
     height: 125px;
     width: 100%;
-    background: url(/ex/w_images/01minecraft/배경위.png) repeat;}
+    background: url(/es/w_images/01minecraft/배경위.png) repeat;}
 .inner-down {
      height: 120px;
       width: 100%;
@@ -61,18 +63,14 @@
 
 section {flex-direction: column;}
 header {flex-direction: column;}
-/* header nav {background: var(--color1);} */
 footer {flex-direction: column;}
 
 .hamburger {
-    width: 36px;
-    /* height: auto; */
     background-repeat: no-repeat;
     text-align: center;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     display: none;
 }
-
 
 li {list-style: none;}
 
@@ -107,6 +105,7 @@ h5 {font-size: 15px;}
     overflow: hidden;
     글로벌 높이값 안보이게 처리
 */
+
 .gloval {
     display: flex;
     width: 100%;
@@ -180,7 +179,6 @@ nav > ul {
 
 
 .gnb li button:hover {color: var(--color3);}
-/* 호버 후 호버 효과 유지 억덯게함? */
 
 .gnb li .sub {
     display: flex;
@@ -215,7 +213,6 @@ nav > ul {
     height: 207px;
     transition: all 0.4s;}
 
-/* nav > a {width: 480px;} */
 
 nav a > img {
     width: 235px;
@@ -296,7 +293,6 @@ nav > div{
 .gamecard {
     width: 1200px;
     height: 600px;
-    /* margin: 20px auto ; */
 }
 
 .pickcard {
@@ -306,10 +302,6 @@ nav > div{
     flex-direction: column;
     justify-content: center;
     align-items: end;
-}
-
-.pickcard .swiper-wrapper {
-    width: 300px;
 }
 
 .pickcard .swiper-pagination {
@@ -392,10 +384,16 @@ nav > div{
     transition: all 0.2s;
 }
 
+.gamecard > .swiper-wrapper {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
 .gamecard > .swiper-wrapper > .swiper-slide {
     display: flex;
     flex-direction: column;
-  }
+}
 
 .gamecard > .swiper-wrapper > .swiper-slide > button{
     position: absolute;
@@ -735,7 +733,7 @@ span > h2 {
 }
 
 /*  */
-.inner600b > button {
+.inner600b  button {
     width: 100px;
     height: 50px;
 }
@@ -792,6 +790,7 @@ footer > .box02 a:hover {color: #fff;}
     align-items: flex-start;
     padding: 60px 100px 0px 100px;
     gap: 40px;
+    background: var(--color1);
 }
 .box02-1 {
     width:400px;
@@ -810,6 +809,9 @@ footer > .box02 a:hover {color: #fff;}
     padding: 0 15px;
 }
 
+.box02-1:first-child img {padding: 0 0 0 10px;}
+
+
 .box02-2 {
     display: flex;
     gap: 40px;
@@ -818,9 +820,7 @@ footer > .box02 a:hover {color: #fff;}
 
 .box02-2 > div h3 {margin: 10px 0 10px 0;}
 
-.box02-3 {
-    margin: 0 0 0 40px;
-}
+.box02-3 {margin: 0 0 20px 40px;}
 
 
 .box03 {
