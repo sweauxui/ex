@@ -1,0 +1,148 @@
+@charset "utf-8";
+
+/* 마크T */
+
+
+.inner { padding: 0 0 0 0;}
+
+header {
+    position: fixed;
+    flex-wrap: wrap;
+    z-index: 2;
+}
+
+section {
+    padding: 180px 0 0 0;
+}
+
+nav {
+    position: relative;
+    padding: 80px 0 0 0;
+    justify-content: space-between;
+    height: auto;
+}
+
+.gnbfamily {gap: 0;}
+
+.logo {
+    background: var(--color1);
+    margin: 0 auto;
+    position: absolute;
+    top:0;
+    padding: 20px;
+}
+
+/* 이미지크기조절 */
+.logo img {
+    width: 35%;
+    height: 35%;
+}
+
+.login_start {
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    right: 0%;
+}
+
+.hamburger {
+    display: block;
+    margin: 0 0 0 20px;
+    z-index: 1;
+    width: 66px;
+    height: 79px;
+    background: url(/ex/w_images/01minecraft/hamburger-icon.png) no-repeat 50% 50% / cover ;
+    border: none;
+}
+
+.gamecard > .swiper-wrapper > .swiper-slide{align-items: center;}
+
+.art01 {padding: 200px 0 0 0;}
+
+.hamburger.on {background: url(/ex/w_images/01minecraft/hamburger-closeicon.png)  no-repeat 50% 50% / cover;}
+
+/* 껏다켰다 */
+.gnbfamily {
+    display: flex;
+    flex-direction: column;
+    height: 0;
+    width: 0;
+    overflow: hidden;
+    padding-left: 0;
+    position: absolute;
+    top: 100%;
+    background: #000;
+}
+
+/* 호버효과 삭제 */
+.gnbfamily li:hover .sub{display:unset}
+.gnbfamily .sub {display: unset;}
+/* 호버효과 재설정 */
+
+.gnbfamily .sub {transition: all 5s;}
+.gnbfamily .sub li:hover {background: rgba(255, 255, 255, 0.2);}
+
+.gnbfamily .sub li {
+    display: none;
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.gnbfamily .sub li.on {
+    display: flex;
+    height: auto;
+}
+
+.gnbfamily li .sub {
+    top: 5px;
+    position: relative;
+}
+
+.gnbfamily.on {
+    height: auto;
+    width: 260px;
+    transition: all 0.5s;
+}
+
+.gnbfamily > li {
+    text-align: start;
+    width: 100%;
+    border-bottom: 2px solid white;
+    padding: 5px 0px;
+}
+
+/* 로그인 스타트 gnbF안에 있을 떄*/
+nav .login_start {
+    display: flex;
+    width: auto;
+    justify-content: flex-end;
+    gap: 35px;
+    padding: 0px 30px 0px 0px;
+}
+
+/*  */
+.gnbfamily:last-child {border-bottom: none;}
+
+.gnbfamily button {padding: 2px 0px;}
+
+.News .swiper-button-next {right: 29%;}
+.News .swiper-button-prev {left: 29%;}
+
+.inner600a {
+    width: auto;
+    padding: 0 10px 0 10px;
+}
+
+.inner600b {
+    width: 38%;
+    justify-content: center;
+}
+
+.hotbox {gap: 30px;}
+
+.box03 {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0;
+}
+
+.box03-2{margin: 0 auto;}
