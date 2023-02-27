@@ -19,14 +19,18 @@ var swiper2 = new Swiper(".News", {
   slidesPerView: 2.5,
   spaceBetween: 40,
   breakpoints: {
+    899: {
+      slidesPerView: 2.5,
+      spaceBetween: 80,
+    },
     1199: {
       slidesPerView: 2.5,
-      spaceBetween: 90,
+      spaceBetween: 40,
     },
-  },
-  899: {
-    slidesPerView: 2.5,
-    spaceBetween: 150,
+    1439: {
+      slidesPerView: 2.5,
+      spaceBetween: 40,
+    },
   },
   centeredSlides: true,
   loop: true,
@@ -40,56 +44,62 @@ var swiper2 = new Swiper(".News", {
   },
 });
 
-  var swiper3 = new Swiper(".pickcard", {
-    spaceBetween: 40,
-    centeredSlides: true,
-    loop: true,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
+var swiper3 = new Swiper(".pickcard", {
+  spaceBetween: 40,
+  centeredSlides: true,
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
+
+$(document).ready(function () {
+  $('.Languages').click(function () {
+    if (!$('.gloval').hasClass('on')) { //만약 글로벌이 온을 가지고 있지 않으면
+      $('.gloval').addClass('on');//온을 추가해라
+    }
+    else {
+      $('.gloval').removeClass('on'); //가지고 있으면 온을 제거해라
+    }
   });
 
+  // 햄버거 버튼 클릭하면 gnb 나타남, 로그인 스타트 gnb안에 들어감
+  $('.hamburger').click(function () {
 
-  $('.Languages').click(function(){
-    if(!$('.gloval').hasClass('on')){ //만약 글로벌이 온을 가지고 있지 않으면
-      $('.gloval').addClass('on')//온을 추가해라
+    if (!$('.gnbfamily').hasClass('on')) {
+      $('.gnbfamily').addClass('on');
     }
-    else{
-      $('.gloval').removeClass('on') //가지고 있으면 온을 제거해라
-    }
-  })
-
-  // $('.Languages').click(function(){
-  //   if(!$('.gloval').hasClass('on')){ //만약 글로벌이 온을 가지고 있지 않으면
-  //     $('.gloval').addClass('on')//온을 추가해라
-  //   }
-  //   else{
-  //     $('.gloval').removeClass('on') //가지고 있으면 온을 제거해라
-  //   }
-  // }) 연습
-
-  
-  // $('.hamburger').click(function(){
-  //   $('.gnb').addClass('on');
-  // })
-
-  $('.hamburger').click(function(){
-    if(!$('.gnb').hasClass('on')){
-      $('.gnb').addClass('on')
-    }
-    else{
-      $('.gnb').removeClass('on')
+    else {
+      $('.gnbfamily').removeClass('on');
     }
 
-    if(!$('.login_start').hasClass('on')){
-      $('.login_start').addClass('on')
+    if (!$('.login_start').hasClass('on')) {
+      $('.login_start').addClass('on');
     }
-    else{
-      $('.login_start').removeClass('on')
+    else {
+      $('.login_start').removeClass('on');
     }
-     $(this).toggleClass('on')
-  })
 
+    $('.login_start').appendTo('.gnbfamily');
 
-// .attr
+    $('.gnbfamily .sub li').removeClass('on');
+
+    $(this).toggleClass('on');
+  });
+
+  // 
+
+  $('.gnbfamily li button').click(function () {
+    if (!$('.gnbfamily .sub li').hasClass('on')) {
+      $('.gnbfamily .sub li').addClass('on');
+    }
+    else {
+      $('.gnbfamily .sub li').removeClass('on');
+    }
+  });
+})
+
+$(window).resize(function(){
+  location.reload();
+})

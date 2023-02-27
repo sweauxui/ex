@@ -22,7 +22,7 @@ nav {
     height: auto;
 }
 
-nav > ul {gap: 0;}
+.gnbfamily {gap: 0;}
 
 .logo {
     background: var(--color1);
@@ -59,17 +59,12 @@ nav > ul {gap: 0;}
 
 .art01 {padding: 200px 0 0 0;}
 
-.hamburger.on {
-    background: url(/ex/w_images/01minecraft/hamburger-closeicon.png)  no-repeat 50% 50% / cover
-    ;
-    /* mix-blend-mode: multiply ; */
-}
+.hamburger.on {background: url(/ex/w_images/01minecraft/hamburger-closeicon.png)  no-repeat 50% 50% / cover;}
 
 /* 껏다켰다 */
-.gnb {
+.gnbfamily {
     display: flex;
     flex-direction: column;
-    width: 260px;
     height: 0;
     width: 0;
     overflow: hidden;
@@ -77,26 +72,57 @@ nav > ul {gap: 0;}
     position: absolute;
     top: 100%;
     background: #000;
+}
+
+/* 호버효과 삭제 */
+.gnbfamily li:hover .sub{display:unset}
+.gnbfamily .sub {display: unset;}
+/* 호버효과 재설정 */
+
+.gnbfamily .sub {transition: all 5s;}
+.gnbfamily .sub li:hover {background: rgba(255, 255, 255, 0.2);}
+
+.gnbfamily .sub li {
+    display: none;
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.gnbfamily .sub li.on {
+    display: flex;
+    height: auto;
+}
+
+.gnbfamily li .sub {
+    top: 5px;
+    position: relative;
+}
+
+.gnbfamily.on {
+    height: auto;
+    width: 260px;
     transition: all 0.5s;
 }
 
-.gnb.on {
-    display: flex;
-    height: 168px;
-    width: 260px;
-}
-/*  */
-
-.gnb li {
+.gnbfamily > li {
     text-align: start;
     width: 100%;
     border-bottom: 2px solid white;
-    padding: 5px 0px 5px 10px;
+    padding: 5px 0px;
 }
 
-.gnb:last-child {border-bottom: none;}
+/* 로그인 스타트 gnbF안에 있을 떄*/
+nav .login_start {
+    display: flex;
+    width: auto;
+    justify-content: flex-end;
+    gap: 35px;
+    padding: 0px 30px 0px 0px;
+}
 
-.gnb button {padding: 2px 0px;}
+/*  */
+.gnbfamily:last-child {border-bottom: none;}
+
+.gnbfamily button {padding: 2px 0px;}
 
 .News .swiper-button-next {right: 29%;}
 .News .swiper-button-prev {left: 29%;}
@@ -120,4 +146,3 @@ nav > ul {gap: 0;}
 }
 
 .box03-2{margin: 0 auto;}
-    
