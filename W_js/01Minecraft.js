@@ -9,19 +9,19 @@ var swiper1 = new Swiper(".gamecard", {
     type: "fraction",
   },
   keyboard: true,
-  autoplay: {
-    delay: 3200,
-    disableOnInteraction: false
-  },
+  // autoplay: {
+  //   delay: 3200,
+  //   disableOnInteraction: false
+  // },
 });
 
 var swiper2 = new Swiper(".News", {
-  slidesPerView: 2.5,
-  spaceBetween: 40,
+  // slidesPerView: 2.5,
+  // spaceBetween: 40,
   breakpoints: {
     899: {
-      slidesPerView: 2.5,
-      spaceBetween: 80,
+      slidesPerView: 1.5,
+      spaceBetween: 10,
     },
     1199: {
       slidesPerView: 2.5,
@@ -66,7 +66,6 @@ $(document).ready(function () {
 
   // 햄버거 버튼 클릭하면 gnb 나타남, 로그인 스타트 gnb안에 들어감
   $('.hamburger').click(function () {
-
     if (!$('.gnbfamily').hasClass('on')) {
       $('.gnbfamily').addClass('on');
     }
@@ -80,9 +79,9 @@ $(document).ready(function () {
     else {
       $('.login_start').removeClass('on');
     }
-
-    $('.login_start').appendTo('.gnbfamily');
-
+  // 
+    // $('.login_start').appendTo('.gnbfamily');
+    
     $('.gnbfamily .sub li').removeClass('on');
 
     $(this).toggleClass('on');
@@ -100,6 +99,6 @@ $(document).ready(function () {
   });
 })
 
-$(window).resize(function(){
-  location.reload();
-})
+// $(window).resize(function(){
+//   location.reload();
+// })
