@@ -16,12 +16,12 @@ var swiper1 = new Swiper(".gamecard", {
 });
 
 var swiper2 = new Swiper(".News", {
-  // slidesPerView: 2.5,
-  // spaceBetween: 40,
+  slidesPerView: 1,
+  spaceBetween: 120,
   breakpoints: {
     899: {
-      slidesPerView: 1.5,
-      spaceBetween: 10,
+      slidesPerView: 2.5,
+      spaceBetween: 90,
     },
     1199: {
       slidesPerView: 2.5,
@@ -73,12 +73,12 @@ $(document).ready(function () {
       $('.gnbfamily').removeClass('on');
     }
 
-    if (!$('.login_start').hasClass('on')) {
-      $('.login_start').addClass('on');
-    }
-    else {
-      $('.login_start').removeClass('on');
-    }
+    // if (!$('.login_start').hasClass('on')) {
+    //   $('.login_start').addClass('on');
+    // }
+    // else {
+    //   $('.login_start').removeClass('on');
+    // }
   // 
     // $('.login_start').appendTo('.gnbfamily');
     
