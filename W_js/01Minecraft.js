@@ -9,10 +9,10 @@ var swiper1 = new Swiper(".gamecard", {
     type: "fraction",
   },
   keyboard: true,
-  // autoplay: {
-  //   delay: 3200,
-  //   disableOnInteraction: false
-  // },
+  autoplay: {
+    delay: 3200,
+    disableOnInteraction: false
+  },
 });
 
 var swiper2 = new Swiper(".News", {
@@ -63,6 +63,8 @@ $(document).ready(function () {
       $('.gloval').removeClass('on'); //가지고 있으면 온을 제거해라
     }
   });
+
+
 
   // 햄버거 버튼 클릭하면 gnb 나타남, 로그인 스타트 gnb안에 들어감
   $('.hamburger').click(function () {
