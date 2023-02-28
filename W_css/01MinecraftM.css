@@ -108,6 +108,7 @@ nav .login_start {
 .News > .swiper-button-next {
     background: url(/ex/w_images/01minecraft/버튼_초록우.png) no-repeat 50% 50% / 54px 54px;
     position: absolute;
+    top: 50%;
     width: 54px;
     height: 54px;
 }
