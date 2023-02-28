@@ -43,6 +43,7 @@
 
 .inner {
     width: 100%;
+    height: auto;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -210,17 +211,23 @@ nav {
     width: 260px;
     transition: all 0.4s;
 }
-
-nav a > img {
+/* 230227 */
+/* nav a > img {
+    max-width: 100%;
     width: 235px;
     height: 100%;                                                                                                                                                                                                                                                                                                                                          
-}
+} */
+/* 230227 */
+/* .art01 {
+    width: auto;
+    height: auto;
+} */
 
 .logo {
     display: flex;
     justify-content: center;
 }
-/* 여기 */
+
 nav .login_start{
     width: 480px;
     display: flex;
@@ -230,10 +237,12 @@ nav .login_start{
 }
 
 /* 1-1 게임 배너 부분 */
+/* 230227 */
 .start {
     display: flex;
-    width: 1440px;
+    width: 100%;
     height: 80px;
+    margin: 0 auto;
     align-items: center;
     justify-content: center;
     line-height: 24px;
@@ -287,10 +296,37 @@ nav .login_start{
     justify-content: center;   
 }
 
+/* 230228 */
+
 .gamecard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;;
     width: 1200px;
     height: 600px;
+    overflow: hidden;
 }
+
+/* .gamecard {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+    width: 70%;
+    height: 600px;
+    overflow: hidden;
+} */
+
+/* 230228 */
+/* .gamecard .swiper-slide {
+    display: block;
+    max-width: 100%;
+    height: auto;
+} */
+
+.art01 {height: auto;}
 
 .pickcard {
     width: 300px;
@@ -304,6 +340,7 @@ nav .login_start{
 .pickcard .swiper-pagination {
     position: relative;
     top: -2px;
+    /* margin: 1px; */
 }
 
 .pickcard h2  {margin: 30px 0 5px 0}
@@ -357,9 +394,13 @@ nav .login_start{
 
 
 /* 게임카드버튼호버 */
+
 .gamecard > .swiper-button-next::after {display: none;}
+/* 230228 */
 .gamecard > .swiper-button-next {
     background: url(/ex/w_images/01minecraft/버튼_초록우.png) no-repeat 50% 50% / 74px 74px;
+    position: absolute;
+    right: 9%;
     width: 74px;
     height: 74px;
 }
@@ -367,11 +408,16 @@ nav .login_start{
     background: url(/ex/w_images/01minecraft/버튼_검정우.png) no-repeat 50% 50% / 64px 64px;
     border: 2px solid var(--colorWhite);
     transition: all 0.2s;
+    position: absolute;
+    right: 9%;
 }
 
 .gamecard > .swiper-button-prev::after {display: none;}
+/* 230228 */
 .gamecard > .swiper-button-prev {
     background: url(/ex/w_images/01minecraft/버튼_초록좌.png)no-repeat 50% 50% / 74px 74px;
+    position: absolute;
+    left:9%;
     width: 74px;
     height: 74px;
 }
@@ -379,25 +425,36 @@ nav .login_start{
     background: url(/ex/w_images/01minecraft/버튼_검정좌.png) no-repeat 50% 50% / 64px 64px;
     border: 2px solid var(--colorWhite);
     transition: all 0.2s;
+    position: absolute;
+    left:9%;
 }
 
+/* 230228 */
 .gamecard > .swiper-wrapper {
     display: flex;
+    flex-direction: row;
+    align-items: center;
     width: 100%;
-    height: 100%;
+    height: 600px;
+    /* overflow: hidden; */
 }
 
-.gamecard > .swiper-wrapper > .swiper-slide {
+/* 230228 */
+/* .gamecard > .swiper-wrapper > .swiper-slide {
     display: flex;
     flex-direction: column;
-}
+    align-items: center;
+    justify-content: center;
+} */
 
 .gamecard > .swiper-wrapper > .swiper-slide > button{
     position: absolute;
+    z-index: 22;
     height: 74px;
     width: 156px;
-    left: 522px;
-    top: 506px;
+    left: 50%;
+    top: 90%;
+    transform: translate(-50%, -50%);
     margin: 0px;
     border: 0;
     font-weight: 700;
@@ -408,10 +465,12 @@ nav .login_start{
 
 .gamecard > .swiper-wrapper > .swiper-slide > button:hover{
     position: absolute;
+    z-index: 22;
     height: 74px;
     width: 156px;
-    left: 522px;
-    top: 506px;
+    left: 50%;
+    top: 90%;
+    transform: translate(-50%, -50%);
     margin: 0px;
     border: 0;
     font-weight: 700;
@@ -424,6 +483,9 @@ nav .login_start{
 
 .gamecard .swiper-pagination {
     display: flex;
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
     justify-content: center;
     align-items: center;
     width: 115px;
@@ -431,15 +493,14 @@ nav .login_start{
     gap: 5px;
     background-color: rgba(255, 255, 255, 0.2);
     color: #fff;
-    position: absolute;
-    left: 20px;
-    top: 546px;
 }
 
 /* 최신소식 */
 .inner1200 {
     width: 1200px;
+    height: auto;
     display: flex;
+    overflow: hidden;
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
@@ -463,21 +524,29 @@ nav .login_start{
 }    
 
 .News1200 {
-    width: 1200px;
+    width: 1440px;
     height: 680px;
+    width: auto;
+    height: auto;
     margin: 20px 0 0;
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
 
 .News {
-    width: 1440px;
+    width: 1200px;
     height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 30px 104px;
+}
+
+.News .swiper-slide img {
+    width: 100%;
+    height: 100%;
 }
 
 .News .swiper-wrapper {
@@ -558,6 +627,7 @@ nav .login_start{
     transition: all 0.3s;
     z-index: 1;
 }
+
 .News .swiper-slide > p {
     opacity: 0;
     transition: all 0.5s;
@@ -822,7 +892,7 @@ footer > .box02 a:hover {color: #fff;}
 
 .box03 {
     display: flex;
-    position: relative;
+    /* position: relative; */
     width: 100%;
     height: 100px;
     gap: 150px;
@@ -837,8 +907,9 @@ footer > .box02 a:hover {color: #fff;}
     gap: 10px;
 }
 
-.box03 :nth-child(2) {
+.box03-2 {
     display: flex;
     gap: 20px;
 }
+
 

@@ -2,11 +2,15 @@
 
 /* 마크M */
 
+section {padding: 0;}
+
 nav {padding: 0;}
 
 nav .login_start {
     gap:0;
     padding: 13px 10px;
+    position: absolute;
+    left: 0;
 }
 
 .hamburger {
@@ -25,63 +29,118 @@ nav .login_start {
 .gamecard { 
     display: flex;
     align-items: center;
-    width: 1060px;
-    height: fit-content;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
 }
 
 .gamecard .swiper-pagination {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 115px;
-    height: 35px;
+    width: 85px;
+    height: 30px;
     gap: 5px;
     position: absolute;
-    left: 180px;
-    top: 320px;
+    left: 10px;
+    bottom: 10px;
 }
 
-.gamecard > .swiper-wrapper > .swiper-slide {
-    align-items: center;
+.gamecard > .swiper-wrapper {
+    height: 100%;
 }
+
+.gamecard > .swiper-wrapper > .swiper-slide {height: auto;}
 
 .gamecard > .swiper-wrapper > .swiper-slide > button {
-    height: 54px;
-    width: 136px;
-    left: 450px;
-    top: 300px;
+    height: 44px;
+    width: 116px;
+    left: 50%;
     margin: 0px;
     border: 0;
 }
 
 .gamecard > .swiper-wrapper > .swiper-slide > button:hover {
-    height: 54px;
-    width: 136px;
-    left: 450px;
-    top: 300px;
+    height: 44px;
+    width: 116px;
+    left: 50%;
     margin: 0px;
     border: 0;
 }
-
+/* 
 .gamecard > .swiper-wrapper > .swiper-slide img {
-    width: 70%;
-    height: 70%;
-    align-items: center;
+    max-width: 100%;
+    height: auto;
+} */
+
+.gamecard > .swiper-button-next {
+    background: url(/ex/w_images/01minecraft/버튼_초록우.png) no-repeat 50% 50% / 54px 54px;
+    position: absolute;
+    right: 0%;
+    width: 54px;
+    height: 54px;
+}
+.gamecard > .swiper-button-next:hover {
+    background: url(/ex/w_images/01minecraft/버튼_검정우.png) no-repeat 50% 50% / 44px 44px;
+    border: 2px solid var(--colorWhite);
+    transition: all 0.2s;
+    position: absolute;
+    right: 0%;
+}
+
+
+.gamecard > .swiper-button-prev {
+    background: url(/ex/w_images/01minecraft/버튼_초록좌.png)no-repeat 50% 50% / 54px 54px;
+    position: absolute;
+    top: 50%;
+    left:0%;
+    width: 54px;
+    height: 54px;
+}
+.gamecard > .swiper-button-prev:hover {
+    background: url(/ex/w_images/01minecraft/버튼_검정좌.png) no-repeat 50% 50% / 44px 44px;
+    border: 2px solid var(--colorWhite);
+    transition: all 0.2s;
+    position: absolute;
+    left:0;
+}
+/*  */
+.News > .swiper-button-next {
+    background: url(/ex/w_images/01minecraft/버튼_초록우.png) no-repeat 50% 50% / 54px 54px;
+    position: absolute;
+    top: 50%;
+    width: 54px;
+    height: 54px;
+}
+.News > .swiper-button-next:hover {
+    background: url(/ex/w_images/01minecraft/버튼_검정우.png) no-repeat 50% 50% / 44px 44px;
+    border: 2px solid var(--colorWhite);
+    transition: all 0.2s;
+    position: absolute;
+}
+
+
+.News > .swiper-button-prev {
+    background: url(/ex/w_images/01minecraft/버튼_초록좌.png)no-repeat 50% 50% / 54px 54px;
+    position: absolute;
+    top: 50%;
+    width: 54px;
+    height: 54px;
+}
+.News > .swiper-button-prev:hover {
+    background: url(/ex/w_images/01minecraft/버튼_검정좌.png) no-repeat 50% 50% / 44px 44px;
+    border: 2px solid var(--colorWhite);
+    transition: all 0.2s;
+    position: absolute;
 }
 
 .logo {
     margin: 0 auto;
     position: relative;
-}
-
-/* .logo img {margin: 0 20px 0 0;} */
-
-.gnbfamily {align-items: start;}
-
-nav .login_start {
-    justify-content: flex-start;
     left: 0;
 }
+
+.gnbfamily {align-items: start;}
 
 .login_start > button {display: none;}
 
@@ -130,6 +189,11 @@ nav .login_start {
 
 .News .swiper-button-next {right: 0;}
 .News .swiper-button-prev {left: 0;}
+/*  */
+.News .swiper-slide img {
+    width: 100%;
+    height: 230px;
+}
 
 .inner600a {
     width: 100%;
