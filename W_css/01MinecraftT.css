@@ -44,7 +44,6 @@ nav {
 .login_start {
     display: flex;
     align-items: center;
-    z-index: 1;
     right: 0%;
 }
 
