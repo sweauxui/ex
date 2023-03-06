@@ -25,6 +25,9 @@ nav {
     height: auto;
 }
 
+.gloval.on {height: 160px;}
+.gloval02.on {height: 160px;}
+
 .gnbfamily {gap: 0;}
 
 .logo {

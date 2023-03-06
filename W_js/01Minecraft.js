@@ -64,7 +64,14 @@ $(document).ready(function () {
     }
   });
 
-
+  $('.Languages02').click(function () {
+    if (!$('.gloval02').hasClass('on')) { //만약 글로벌이 온을 가지고 있지 않으면
+      $('.gloval02').addClass('on');//온을 추가해라
+    }
+    else {
+      $('.gloval02').removeClass('on'); //가지고 있으면 온을 제거해라
+    }
+  });
 
   // 햄버거 버튼 클릭하면 gnb 나타남, 로그인 스타트 gnb안에 들어감
   $('.hamburger').click(function () {
